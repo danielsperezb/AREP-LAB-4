@@ -6,7 +6,6 @@ A través de este taller, los participantes crearon un prototipo inicial que dem
 
 ## Reto
 
-
 El principal reto de este laboratorio radica en la complejidad de diseñar y desarrollar un servidor web en Java, así como en la implementación de un framework IoC desde cero. Los estudiantes deben comprender profundamente los conceptos de reflexión y la inversión de control, además de enfrentar la tarea de hacer que el servidor sea capaz de cargar dinámicamente clases y componentes anotados. Además, la construcción de una aplicación web de ejemplo que funcione con este servidor agrega un nivel adicional de complejidad, ya que deben integrar todos estos componentes en un sistema cohesivo. En resumen, el reto fundamental de este laboratorio es la síntesis de múltiples conceptos avanzados de programación en un proyecto funcional y coherente.
 
 ## Empezando
@@ -31,34 +30,34 @@ Estas instrucciones te permitirán obtener una copia del proyecto y ejecutarlo e
 
 7. Código fuente o archivo JAR: Debes tener el código fuente de tu programa Java o un archivo JAR compilado que contenga tu programa listo para ser ejecutado.
 
-8. Conocimientos basicos en linea de comando (CMD) de tu computadora.
+8. Conocimientos básicos en línea de comandos (CMD) de tu computadora.
 
-En este caso, el codigo fuente lo encuentas en esta REPOSITORIO GITHUB.
+En este caso, el código fuente lo encuentras en este [REPOSITORIO GITHUB](https://github.com/danielsperezb/AREP-LAB-4).
 
 ### Instalación
 
 Una serie de pasos a seguir para configurar un entorno de desarrollo.
 
-Primer Paso (Donde encontramos dos opciones)
+#### Primer Paso (Donde encontramos dos opciones)
 
-- Primera Opcion: Fork del repositorio: En lugar de clonar directamente el repositorio original, crea un "fork" (una copia) del repositorio en tu cuenta de GitHub. Esto se hace haciendo clic en el botón "Fork" en la parte superior derecha de la página del repositorio original en GitHub. Esto creará una copia del repositorio en tu cuenta de GitHub.
-- Segunda Opcion: Descarga el ZIP de este repositorio.
+- Primera Opción: Fork del repositorio: En lugar de clonar directamente el repositorio original, crea un "fork" (una copia) del repositorio en tu cuenta de GitHub. Esto se hace haciendo clic en el botón "Fork" en la parte superior derecha de la página del repositorio original en GitHub. Esto creará una copia del repositorio en tu cuenta de GitHub.
+- Segunda Opción: Descarga el ZIP de este repositorio.
 
-Segundo Paso
+#### Segundo Paso
 
-- Abre el proyecto (Carpeta donde se encuentra el proyecto) en tu IDLE preferido. En este ejemplo de Instalacion lo haremos en NETBEANS.
+- Abre el proyecto (Carpeta donde se encuentra el proyecto) en tu IDLE preferido. En este ejemplo de Instalación lo haremos en NETBEANS.
 ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/09931f93-aa90-4d81-bcb6-df2c62194d30)
 
 - Vamos a la clase MyApp.java
 
-Tercer Paso  (Donde encontramos dos opciones)
+#### Tercer Paso  (Donde encontramos dos opciones)
 
-- Primera Opcion: Arrancarlo directamente desde MyApp.java:
+- Primera Opción: Arrancarlo directamente desde MyApp.java:
 
   ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/7aca8c4b-79a1-45e2-8363-6b232901f9f5)
 
-- Segunda Opcion: Arrancarlo con cmd:
-  a) Clic derecho en la carpeta donde esta el proyecto: Opcion -> Abrir en Terminal
+- Segunda Opción: Arrancarlo con cmd:
+  a) Clic derecho en la carpeta donde esta el proyecto: Opción -> Abrir en Terminal
   ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/d4b27a18-1153-4b9d-ba6b-c344cfd1b9bd)
   b) mvn package
   ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/e5957ce3-f31e-4fc0-8ad6-9b24eed94f5c)
@@ -81,10 +80,7 @@ Tercer Paso  (Donde encontramos dos opciones)
 
 ## Ejecución de las pruebas
 
-
 ### Desglose de pruebas de extremo a extremo
-
-
 
 #### Pruebas con fundamentos de finalización
 
@@ -98,14 +94,13 @@ Tercer Paso  (Donde encontramos dos opciones)
 
 ![gif](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/ab21cf15-df99-4b0f-bc7d-878a03045c1b)
 
-Este Html contiene una cambinacion del primer HTML de la parte superior, el CSS y el JAVASCRIPT
+Este Html contiene una combinación del primer HTML de la parte superior, el CSS y el JAVASCRIPT
 
 - Abre la siguiente url: http://localhost:35000/page.html
 
   ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/56d24195-7e73-444e-a85f-c5b70788cf94)
 
-  Esta es nuestra pagina de 404 personalizada
-
+  Esta es nuestra página de 404 personalizada
 
 2. Archivo CSS
 - Abre la siguiente url: http://localhost:35000/style.css
@@ -137,10 +132,6 @@ Este Html contiene una cambinacion del primer HTML de la parte superior, el CSS 
  - Abre la siguiente url: http://localhost:35000/piolin.jpg
   ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/73c55e88-65e4-4180-9ad0-3a9b18b7c093)
 ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/dda4891e-f657-4ac7-8c46-f3e34f4b6096)
-
-
-   
-
 
 ## Implementación
 
