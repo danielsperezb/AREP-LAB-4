@@ -1,16 +1,16 @@
-# Compiled class file
+# Archivos compilados de Java
 *.class
 
-# Log file
+# Archivos de registro (logs)
 *.log
 
-# BlueJ files
+# Archivos específicos de BlueJ (si no usas BlueJ, puedes eliminar esta línea)
 *.ctxt
 
-# Mobile Tools for Java (J2ME)
+# Archivos temporales de Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Archivos de paquete (archivos generados al empaquetar tu proyecto)
 *.jar
 *.war
 *.nar
@@ -19,6 +19,24 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Archivos de registro de fallos de la máquina virtual de Java
+# Consulta http://www.java.com/en/download/help/error_hotspot.xml para más información
 hs_err_pid*
+
+# Archivos de registro de replay (si no los usas, puedes eliminar esta línea)
 replay_pid*
+
+# Reglas de exclusión según tus necesidades específicas a continuación:
+
+#Excluir archivos de configuración local de Eclipse
+ .settings/
+ .project
+ .classpath
+
+# Ejemplo: Excluir directorio de dependencias de Maven
+ target/
+
+# Ejemplo: Excluir archivos generados por IDEs como IntelliJ IDEA o Eclipse
+ .idea/
+ .eclipse/
+
