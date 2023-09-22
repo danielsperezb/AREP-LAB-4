@@ -144,7 +144,25 @@ Este Html contiene una cambinacion del primer HTML de la parte superior, el CSS 
 
 ## Implementación
 
-1. 
+1) Creación de Anotaciones: Se definen dos anotaciones, @Component y @RequestMapping, para marcar clases y métodos que serán gestionados por el framework.
+
+2)Clase HttpServer: Esta clase representa un servidor HTTP simple que maneja solicitudes entrantes. Utiliza reflexión para escanear controladores marcados con anotaciones y enruta las solicitudes a los métodos correspondientes.
+
+3)Patrón Singleton: Se implementa el patrón Singleton para asegurar que solo haya una instancia de HttpServer en la aplicación.
+
+4)Escaneo de Controladores: Se utiliza reflexión para escanear archivos Java en un directorio específico en busca de clases marcadas con @Component. Los métodos de estas clases que estén marcados con @RequestMapping se registran en un mapa para su posterior enrutamiento.
+
+5)Iniciando el Servidor: Se inicia un servidor socket en un puerto específico (35000) y entra en un bucle infinito para esperar solicitudes entrantes.
+
+6)Manejo de Solicitudes: Cuando se recibe una solicitud, se analiza su URL y se busca el método correspondiente en el mapa de servicios registrados. Si se encuentra, se llama al método y se envía la respuesta al cliente.
+
+7) Lectura de Archivos: Se incluyen controladores para servir archivos CSS, HTML, imágenes JPG y PNG. Estos controladores leen los archivos correspondientes y envían el contenido como respuesta HTTP.
+
+8)Enviando Respuestas HTTP: Se construyen respuestas HTTP con encabezados adecuados, como "Content-Type", y se envían al cliente a través de un flujo de salida.
+
+9)Manejo de Errores: Si la URL solicitada no coincide con ningún servicio registrado, se utiliza un controlador de error para responder con una página "noEncontrado.html".
+
+10)Clase MyApp: La clase principal que inicia la aplicación creando una instancia del servidor HTTP y llamando al método start para comenzar a escuchar solicitudes.
 
 ## Construido con
 
