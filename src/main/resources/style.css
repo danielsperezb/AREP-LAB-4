@@ -1,0 +1,21 @@
+/* estilo.css */
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #ff00ff;
+    background-color: #00ffff;
+    padding: 20px;
+    border: 5px dashed #ff0000;
+    border-radius: 15px;
+    animation: rotar 5s linear infinite; /* Animación de rotación continua */
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
