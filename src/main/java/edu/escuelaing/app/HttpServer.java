@@ -38,10 +38,14 @@ public class HttpServer {
 
     /**
      * Inicia el servidor HTTP y maneja las solicitudes entrantes.
-
+     *
+     * @throws ClassNotFoundException Controlado
+     * @throws IOException Controlado
+     * @throws IllegalAccessException Controlado
+     * @throws InvocationTargetException Controlado
      */
     public void start() throws ClassNotFoundException, IOException, IllegalAccessException, InvocationTargetException {
-
+        ScanDirectoryJavaFilesUsingReflexion();
 
         ServerSocket serverSocket = null;
         try {
@@ -89,7 +93,13 @@ public class HttpServer {
 
             }
 
-         
+            Method method = servicios.get(urlString);
+
+            if (method != null) {
+                response = String.valueOf(method.invoke(null));
+            } else {
+                response = String.valueOf(servicios.get("/noEncontrado.html").invoke(null));
+            }
 
             out.println(response);
 
@@ -108,5 +118,29 @@ public class HttpServer {
         return this.outputStream;
     }
 
-   
+    /**
+     * Escanea los archivos Java en el directorio de controladores utilizando reflexión y registra los métodos anotados.
+     *
+     * @throws IOException Controlado
+     * @throws ClassNotFoundException Controlado
+     */
+    public void ScanDirectoryJavaFilesUsingReflexion() throws IOException, ClassNotFoundException {
+        Path root = Paths.get("src/main/java/edu/escuelaing/app/controllers/");
+        try (DirectoryStream<Path> files = Files.newDirectoryStream(root, "*.java")) {
+            for (Path file : files) {
+                String fileName = file.getFileName().toString();
+                String className = "edu.escuelaing.app.controllers." + fileName.replace(".java", "");
+                Class<?> c = Class.forName(className);
+                if (c.isAnnotationPresent(Component.class)) {
+                    Method[] methods = c.getDeclaredMethods();
+                    for (Method method : methods) {
+                        if (method.isAnnotationPresent(RequestMapping.class)) {
+                            String k = method.getAnnotation(RequestMapping.class).value();
+                            servicios.put(k, method);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

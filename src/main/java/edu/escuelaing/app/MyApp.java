@@ -11,7 +11,15 @@ import java.lang.reflect.InvocationTargetException;
  */
 public class MyApp {
 
-
+    /**
+     * Método principal de la aplicación que inicia el servidor HTTP.
+     * 
+     * @param args Argumentos de la línea de comandos (no se utilizan en este caso).
+     * @throws IOException Controlada
+     * @throws InvocationTargetException Controlada
+     * @throws IllegalAccessException Controlada
+     * @throws ClassNotFoundException Controlada
+     */
     public static void main(String[] args) throws IOException, InvocationTargetException, IllegalAccessException, ClassNotFoundException {
         // Inicia el servidor HTTP utilizando el patrón Singleton.
         HttpServer.getInstance().start();
