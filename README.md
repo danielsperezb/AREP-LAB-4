@@ -90,19 +90,56 @@ Tercer Paso  (Donde encontramos dos opciones)
 
 1. Archivo HTML
 
+- Abre la siguiente url: http://localhost:35000/page.html
+ 
+ ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/dd0c7e94-bbb0-480e-857e-4c10e8ba2b44)
+
+- Abre la siguiente url: http://localhost:35000/page.html
+
+![gif](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/ab21cf15-df99-4b0f-bc7d-878a03045c1b)
+
+Este Html contiene una cambinacion del primer HTML de la parte superior, el CSS y el JAVASCRIPT
+
+- Abre la siguiente url: http://localhost:35000/page.html
+
+  ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/56d24195-7e73-444e-a85f-c5b70788cf94)
+
+  Esta es nuestra pagina de 404 personalizada
 
 
 2. Archivo CSS
+- Abre la siguiente url: http://localhost:35000/style.css
+
+  ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/20f7f5ba-8920-49ef-bdbc-977744568f16)
+  ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/35147fa5-1b0d-416f-a5c1-f6d6d2c1fdd6)
 
 
 3. Archivo JS
+- Abre la siguiente url: http://localhost:35000/script.js
+
+  ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/12bf11f2-5d7a-447d-a2ff-79841e134f6b)
+  ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/6a9f8f8b-34bb-4744-8edd-e80dd6861053)
 
 
-4. Archivo PNG
+4. Archivos PNG
+
+   - Abre la siguiente url: http://localhost:35000/logo.png
+
+     ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/fb4d5532-b555-4438-9919-f45478c5bddd)
+     ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/77a300ad-d0d6-4b52-a7f2-37464d2678ca)
+   -   Abre la siguiente url: http://localhost:35000/madrid.png
+
+      ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/b0bc5866-eb2b-47ef-a88f-037e961dabaf)
+      ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/f1d15cb9-3393-45fc-96c1-db70fa232069)
+
+6. Archivo JPG
+
+ - Abre la siguiente url: http://localhost:35000/piolin.jpg
+  ![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/73c55e88-65e4-4180-9ad0-3a9b18b7c093)
+![image](https://github.com/danielsperezb/AREP-LAB-4/assets/101849347/dda4891e-f657-4ac7-8c46-f3e34f4b6096)
 
 
-5. Archivo JPG
-
+   
 
 
 ## Implementación
