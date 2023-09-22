@@ -18,7 +18,11 @@ import edu.escuelaing.app.RequestMapping;
 public class HelloController {
 
     /**
-     * DADO ENUNCIADO DEL PROBLEMA
+     * Método getHello
+     *
+     * Este método maneja las solicitudes GET para la ruta raíz "/".
+     *
+     * @return Una cadena de saludo simple.
      */
     @RequestMapping("/")
     public static String getHello() {
